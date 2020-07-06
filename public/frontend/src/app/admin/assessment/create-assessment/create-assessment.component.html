@@ -1,0 +1,43 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Assessment</a></li>
+    <li class="breadcrumb-item active">New Assessment</li>
+  </ol>
+</nav>
+
+<div class="white border rounded p-5">
+  <div class="row">
+    <div class="col-md-6">
+      <p class="h6 mb-3"><strong>Assessment Title</strong> <span class="text-danger">*</span></p>
+      <input type="text" class="form-control" placeholder="Untitled Assessment">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="customSwitches">
+        <label class="custom-control-label" for="customSwitches">Make assessment</label>
+        <small>Assign points to questions, set pass mark, and allow auto marking and much more</small>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <p class="h6 mb-3"><strong>Introduction</strong> <span class="text-danger">*</span></p>
+      <ckeditor [editor]="Editor"></ckeditor>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <p class="h6 mb-3"><strong>Confirmation Message</strong> <span class="text-danger">*</span></p>
+      <ckeditor [editor]="Editor"></ckeditor>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <p class="h6 mb-3"><strong>Special Instruction</strong></p>
+      <ckeditor [editor]="Editor"></ckeditor>
+    </div>
+  </div>
+</div>

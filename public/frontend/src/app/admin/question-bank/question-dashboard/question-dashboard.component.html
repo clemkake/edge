@@ -1,0 +1,181 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Manage</a></li>
+    <li class="breadcrumb-item active">Question Bank</li>
+  </ol>
+</nav>
+<p class="h5 text-info"><strong>Question Bank</strong></p>
+<p>Filter questions by tag</p>
+<div class="">
+  <span class="badge badge-info ml-2">Test</span>
+  <span class="badge badge-info ml-2">Test 1</span>
+</div>
+
+<div class="border rounded white p-3 mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <input class="form-check-input" type="checkbox" id="checkbox">
+      <label class="form-check-label" for="checkbox" class="mr-2 label-table">&nbsp;</label>
+      <button type="button" class="btn btn-outline-info btn-sm rounded waves-effect" data-toggle="modal" data-target="#addQuestion">Add Question</button>
+      <button type="button" class="btn btn-outline-info btn-sm rounded waves-effect" >Create Assessments</button>
+      <button type="button" class="btn btn-outline-info btn-sm rounded waves-effect" >Add to Assessments</button>
+    </div>
+    <div class="col-md-6  ml-auto">
+      <div class="row">
+        <div class="col-md-4">
+          <select class="browser-default custom-select">
+            <option value="">Filter By</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <select class="browser-default custom-select">
+            <option value="">Sort By</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <form class="ng-pristine ng-valid ng-touched">
+            <input autocomplete="off" class="ng-pristine ng-valid ng-touched" type="text" tabindex="0" id="" placeholder="Search For Questions">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div><hr>
+  <div class="row mt-4">
+    <div class="col-md-1">
+      <input class="form-check-input" type="checkbox" id="checkbox1">
+      <label class="form-check-label" for="checkbox1" class="mr-2 label-table">&nbsp;</label>
+      <a href="javascript:void(0)"><i class="fa fa-trash"></i></a>
+    </div>
+    <div class="col-md-10">
+      <h5 class="text-info">Question 1</h5>
+      <span class="badge badge-success ">Single Answer</span>
+      <span class="ml-4">Creayed by: Saurav suman</span>
+    </div>
+    <div class="col-md-1 text-right">
+      <p class="h5 text-info">10</p>
+      <p>Assessment Use this Question</p>
+    </div>
+  </div><hr>
+  <div class="row mt-4">
+    <div class="col-md-1">
+      <input class="form-check-input" type="checkbox" id="checkbox2">
+      <label class="form-check-label" for="checkbox2" class="mr-2 label-table">&nbsp;</label>
+      <a href="javascript:void(0)"><i class="fa fa-trash"></i></a>
+    </div>
+    <div class="col-md-10">
+      <h5 class="text-info">Question 2</h5>
+      <span class="badge badge-success ">Single Answer</span>
+      <span class="ml-4">Creayed by: Saurav suman</span>
+    </div>
+    <div class="col-md-1 text-right">
+      <p class="h5 text-info">10</p>
+      <p>Assessment Use this Question</p>
+    </div>
+  </div><hr>
+  <div class="row mt-4">
+    <div class="col-md-1">
+      <input class="form-check-input" type="checkbox" id="checkbox3">
+      <label class="form-check-label" for="checkbox3" class="mr-2 label-table">&nbsp;</label>
+      <a href="javascript:void(0)"><i class="fa fa-trash"></i></a>
+    </div>
+    <div class="col-md-10">
+      <h5 class="text-info">Question 3</h5>
+      <span class="badge badge-success ">Single Answer</span>
+      <span class="ml-4">Creayed by: Saurav suman</span>
+    </div>
+    <div class="col-md-1 text-right">
+      <p class="h5 text-info">10</p>
+      <p>Assessment Use this Question</p>
+    </div>
+  </div><hr>
+  <div class="row mt-4">
+    <div class="col-md-1">
+      <input class="form-check-input" type="checkbox" id="checkbox4">
+      <label class="form-check-label" for="checkbox4" class="mr-2 label-table">&nbsp;</label>
+      <a href="javascript:void(0)"><i class="fa fa-trash"></i></a>
+    </div>
+    <div class="col-md-10">
+      <h5 class="text-info">Question 4</h5>
+      <span class="badge badge-success ">Single Answer</span>
+      <span class="ml-4">Creayed by: Saurav suman</span>
+    </div>
+    <div class="col-md-1 text-right">
+      <p class="h5 text-info">10</p>
+      <p>Assessment Use this Question</p>
+    </div>
+  </div><hr>
+</div>
+
+<!-- Modal: Add Question -->
+<div class="modal fade right" id="addQuestion" tabindex="-1" role="dialog" aria-labelledby="addQuestionModalLabel"
+aria-hidden="true" data-backdrop="false">
+<div class="modal-dialog modal-lg modal-full-height modal-right modal-notify modal-info" role="document">
+  <div class="modal-content">
+    <!--Header-->
+    <div class="modal-header">
+      <p class="heading lead">Question</p>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true" class="white-text">×</span>
+      </button>
+    </div>
+    <!--Body-->
+    <div class="modal-body">
+      <div class="row">
+        <div class="col-md-11">
+          <label for="selectQuestionType">Question Type <span class="text-danger">*</span></label>
+          <select class="browser-default custom-select" id="selectQuestionType">
+            <option selected>Select Question Type</option>
+            <option value="1">Multi-choice</option>
+            <option value="2">Single option</option>
+            <option value="3">True/False</option>
+            <option value="4">Fill in the blank</option>
+            <option value="5">Paragraph</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-sm-5">
+          <h6>What question do you want to ask?
+              <span style="color:red">*</span>
+          </h6>
+        </div>
+        <div class="col-md-2">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="materialUnchecked">
+            <label class="form-check-label" for="materialUnchecked">Required</label>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="materialUnchecked1">
+            <label class="form-check-label" for="materialUnchecked1">Shuffle answers</label>
+          </div>
+        </div>
+        <div class="col-sm-3" tooltip="Assign point to this question">
+          <input style="display:inline; width: 40%;" class="styled form-control" type="number" min="1" >
+          <label> Point</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control rounded" rows="5"></textarea>
+      </div>
+      <div class="row">
+        <label>Answer Choice</label>
+      </div>
+      <div class="row mt-5">
+        <div class="col-sm-12">
+          <h6>Tag this question with skills or categories</h6>
+          <input type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput">
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="modal-footer text-right">
+      <a type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">Cancel</a>
+      <a type="button" class="btn btn-success waves-effect waves-light">Send</a>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal: modalPoll -->

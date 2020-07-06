@@ -1,0 +1,110 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Manage</a></li>
+    <li class="breadcrumb-item active">Reports</li>
+  </ol>
+</nav>
+
+<div class="border rounded white p-3">
+  <p class="h5 text-info"><strong>Summary Reports</strong></p>
+  <div class="row pl-4 pr-4">
+    <div class="col-md-4 mt-4">
+      <div class="card grey lighten-5 p-4">
+        <div class="text-center">
+          <img src="assets/images/icon-13.png" class="rounded">
+          <h5 class="mt-3">User Summary</h5>
+          <p class="mt-3">View user summary report, including Courses, Assessment and Learning Path </p>
+        </div>
+        <div class="">
+          <form>
+            <input type="text" class="form-control" placeholder="Enter User">
+            <button class="btn btn-danger btn-sm btn-block" disabled>Generate Report <i class="fa fa-cogs ml-1"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mt-4">
+      <div class="card grey lighten-5 p-4">
+        <div class="text-center">
+          <img src="assets/images/icon-14.png" class="rounded">
+          <h5 class="mt-3">Assessment Summary</h5>
+          <p class="mt-3">View assessments summary reports including user response and score-sheet. </p>
+        </div>
+        <div class="">
+          <form>
+            <input type="text" class="form-control" placeholder="Enter Assessment">
+            <button class="btn btn-danger btn-sm btn-block" disabled>Generate Report <i class="fa fa-cogs ml-1"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mt-4">
+      <div class="card grey lighten-5 p-4">
+        <div class="text-center">
+          <img src="assets/images/icon-15.png" class="rounded">
+          <h5 class="mt-3">Course Dashboard</h5>
+          <p class="mt-3">View course summary reports, including enrollments, course assessments and assignments etc </p>
+        </div>
+        <div class="">
+          <form>
+            <input type="text" class="form-control" placeholder="Enter Course">
+            <button class="btn btn-danger btn-sm btn-block" disabled>Generate Report <i class="fa fa-cogs ml-1"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row pl-4 pr-4 text-center mt-5">
+    <div class="col-md-4">
+      <h5 class="text-info"><strong>Learning Path</strong></h5>
+    </div>
+    <div class="col-md-4">
+      <select class="browser-default custom-select">
+        <option value="">---Select Learning Path---</option>
+        <option value="1: Object">Beta-Lunch</option>
+        <option value="2: Object">Front End Developer</option>
+        <option value="3: Object">Backend Developer</option>
+        <option value="4: Object">test learning path</option>
+        <option value="5: Object">lol</option>
+        <option value="6: Object">Generic Courses</option>
+        <option value="7: Object">Information Security Policy</option>
+        <option value="8: Object">Consultant</option>
+        <option value="9: Object">learning path 1</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-danger btn-sm" disabled>Generate Report <i class="fa fa-cogs ml-1"></i></button>
+    </div>
+  </div>
+  <div class="row text-center m-4 yellow lighten-3 p-4">
+    <div class="col-md-3">
+      <select class="browser-default custom-select">
+        <option value="">---Select a step---</option>
+      </select>
+    </div>
+    <div class="col-md-3">
+      <div class="custom-control custom-radio">
+        <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+        <label class="custom-control-label" for="defaultUnchecked">
+          <form class="ng-pristine ng-valid ng-touched">
+            <input autocomplete="off" class="ng-pristine ng-valid ng-touched" minlength="1" type="text" tabindex="0" id="" placeholder="Select courses (Max 3)" aria-label="Select courses (Max 3)">
+          </form>
+        </label>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="custom-control custom-radio">
+        <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios">
+        <label class="custom-control-label" for="defaultChecked">
+          <form class="ng-pristine ng-valid ng-touched">
+            <input  autocomplete="off" class="ng-pristine ng-valid ng-touched" minlength="1" type="text" tabindex="0" id="" placeholder="Select assessments (Max 3)" aria-label="Select assessments (Max 3)">
+        </form>
+        </label>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-danger btn-sm" disabled>Generate Report <i class="fa fa-cogs ml-1"></i></button>
+    </div>
+  </div>
+</div>
